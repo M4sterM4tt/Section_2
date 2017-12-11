@@ -12,6 +12,7 @@
 
 <body>
 	
+    
     <script id='template' type='text/ractive'>
         <ul>
         {{#each fruitlist}}
@@ -26,6 +27,14 @@
   		
     </script>
     
+    
+    <script id='template2' type='text/ractive'>
+        {{#each fruitlist}}
+			<p> {{name}}, {{colour}}, {{cost}}, {{origin}} </p>
+        {{/each}}
+    </script>
+    
+    
     <div data-role="page" id="pageone">
   
   		<div data-role="header">
@@ -35,9 +44,17 @@
   		<div data-role="content" id="content">
   		</div>
   
+        <div data-role="content" id="content2">
+  		</div>
+        
+        <!--<p>Enter the Fruit</p><input type="text" id="textinput" value=""  /> -->
+  	    <!--<button id="submitButton">Confirm</button> -->
+        <!-- <div data-role="content" id="content3"> -->
+            
   		<div data-role="footer">
     		<h4>Footer</h4>
   		</div>
+        
 	</div>
 
     
